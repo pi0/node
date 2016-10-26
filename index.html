@@ -1,0 +1,129 @@
+<div class="boxy">
+        <div class="inner-item">
+          
+            <div class="sub">
+                <p>Tell me. <a href="mailto:zachubb89@gmail.com?Subject=Hey%20there.">Contact Zach</a></p>
+            </div>
+          <h3>Like what you see?</h3>
+        </div>
+</div>
+
+<style>
+body {
+  background:#F7A28C;
+}
+
+.boxy {
+    margin: 0 0 0 20%;
+    padding: 0;
+    display: block;
+    text-align: center;
+    width: 220px;
+    height: 220px; 
+}
+ 
+.boxy:after,
+.inner-item:before {
+    content: '';
+    display: table;
+}
+ 
+.boxy:after {
+    clear: both;
+}
+
+.inner-item {   
+    width:100%;
+    height:100%;
+    background: #aaaaaa;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    cursor: default;
+    margin:20px;
+    box-shadow: 
+        inset 0 0 0 16px rgba(255,255,255,0.6),
+        0 1px 2px rgba(0,0,0,0.1);
+    -webkit-transition: all 0.4s ease-in-out; 
+}
+
+
+.sub {
+    position: absolute;
+    background: rgba(244,130,34, 0.8);
+    width: inherit;
+    height: inherit;
+    border-radius: 50%;
+    overflow: hidden;
+    opacity: 0;
+    -webkit-transition: all 0.4s ease-in-out;
+    -webkit-transform: scale(0);
+}
+
+.inner-item h3 {
+    position:relative;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 24px;
+    margin: 0 30px;
+    padding: 75px 0 0 0;
+    height: 100px;
+    font-family: Arial, sans-serif;
+    font-weight: 700;
+    text-shadow: 
+        0 0 1px #fff, 
+        0 1px 1px rgba(0,0,0,0.2);
+}
+
+.sub p {
+    color: #fff;
+    padding: 10px 5px;
+    font-style: normal;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-family: Arial, sans-serif;
+    margin: 140px 30px;
+    border-top: 5px solid rgba(255,255,255,0.5);
+    opacity: 0;
+    -webkit-transition: all 0.4s ease-in-out 0.8s;
+}
+
+.sub p a {
+    display: block;
+    color: rgba(255,255,255,0.7);
+    font-style: normal;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 11px;
+    letter-spacing: 2px;
+    padding-top: 7px;
+    font-family: Arial, sans-serif;
+    text-decoration:none;
+}
+ 
+.sub p a:hover {
+    color: rgba(173, 221, 234,1);
+    padding: 5px;
+    border-radius:101px;
+    border: 2px solid #BA611D;
+    background-color:rgba(186, 97, 29,0.1);
+}
+
+.inner-item:hover {
+    box-shadow: 
+        inset 0 0 0 1px rgba(255,255,255,0.8),
+        0 1px 2px rgba(0,0,0,0.1);
+}
+
+.inner-item:hover .sub {
+    -webkit-transform: scale(1);
+    opacity: 1;
+}
+
+.inner-item:hover .sub p {
+    opacity: 1;
+}
+</style>
