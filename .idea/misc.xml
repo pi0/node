@@ -42,7 +42,7 @@
     </properties>
   </component>
   <component name="JavaScriptSettings">
-    <option name="languageLevel" value="ES6" />
+    <option name="languageLevel" value="FLOW" />
   </component>
   <component name="JsBowerSettings">
     <exe-path />

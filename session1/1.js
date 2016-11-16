@@ -3,7 +3,7 @@ var http = require('http');
 var content = '<h1>Works :)</h1>';
 
 function ttt() {
-    console.log('new request')
+    console.log('new request');
     // ...
 }
 
